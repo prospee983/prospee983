@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Page</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            width: 100%;
+            padding: 0;
+            background-color: white;
+        }
+         .main-header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spread items across header */
+    align-items: center;
+    padding: 10px 110px;
+    z-index: 1000; /* Ensure header stays above other content */
+  }
+ 
+ .main-content {
+width: 75%;        
+padding-top: 5px; /* Creates space for the fixed header */
+padding:  10px;
+ }
+
+.secondary-content {
+padding: 5px;
+width: 70%;
+background-color: #f0f0f0;
+border-right: 30px solid lightblue;
+border-left: 30px solid lightblue;
+text-align: left;
+}
+
+.tertiary-content {
+width: 100%; /* Adjust width as needed */
+padding: 20px;
+background-color: #e8e8e8;
+border-right: 2px solid #ddd;
+}
+.tertiary-content-wrapper {
+display: flex;
+align-items: flex-start; /* Aligns items to the top */
+gap: 50px; /* Adds space between the image and text */
+}
+
+.tertiary-image {
+    width: 400px; /* Set the image width as needed */
+    height: 80px; /* Set the image height to match the aspect ratio */
+    border-radius: 100px; /* Optional: round the corners of the image */
+}
+
+.tertiary-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+}
+.search-form {
+    display: flex;
+    margin-bottom: 15px; /* Spacing between search bar and other content */
+}
+
+.search-form input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 2px solid wheat;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-form button {
+    padding: 8px 15px;
+    background-color: #0073e6;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+    .nav-links {
+    display: flex;
+    gap: 1px;
+    }
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 5px;
+}
+.cta-button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0073e6;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+        }
+    
+
+        section {
+            padding: 30px;
+            width: 100%;
+            margin: 100px;
+            text-align: center;
+            background-color: white;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            position: fixed; bottom: 0; width: 100;
+        }
+        .container {
+            background-color: lightblue;
+            padding: 30px;
+            border-radius: 20px;
+            max-width: 500px;
+        
+      }
+      img {
+          width: 60px;
+          height: 40px;
+          border-radius: 50%;
+          margin-bottom: 20px;
+      } 
+      .logo-container {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+      }
+  </style>
+</head>
+<body>
+  <header class="main-header">
+      <div class="logo-container">
+          <img src="logo/html.jpg" alt="My Logo" class="logo">
+      </div>
+      <nav class="nav-links">
+          <a href="#library">Library</a>
+          <a href="#subjects">Subjects</a>
+          <a href="#paths">Paths</a>
+        </nav>
+        <div class="right-actions">
+            <a href="#sign in">Sign in</a>
+            <button class="cta-button">Join Pro</button>
+        </div>
+    </header>
+    <main>
+     <div class="main-content">
+        <section>
+            <h1>Ready to build something awesome?</h1>
+            <p>We create practical screencasts for awesome developers.</p>
+            <form class="search-form">
+                <input type="text" placeholder="Search our library.eg. Learn value" aria-label="Search">       
+        </section>
+
+    <section
+     class="secondary-content">
+        <h2>Practical projects to get you ahead.</h2>
+        <p>Rather than just teach theory. We focus on real code to inspire your next project. Learning shouldn't be boring. So have some fun. </p>
+    </section>
+    <section class="tertiary-content">
+      <div class="tertiary-content-wrapper">
+        <!-- Image on the left side -->
+         <Img src="Img/img.jpg">
+        <!-- Text content on the right side of the image -->
+        <div class="tertiary-text">
+        <p>
+        My career started as a designer. Out of necessity, i needed to learn how
+        to handle the entire stack. Codecourse took me from basically no knowledge of development to being able to handle every aspect of it.
+    </p>
+    <p>
+        Dinyelu Sunday Nnamdi, Anambra State University, Nigeria
+    </p>
+        </div>
+    </div>
+</section>
+</div>
+</main>
+</body>
+</html>
